@@ -1,0 +1,33 @@
+
+#color {
+    margin-left: 10rem;
+    width: 200px;
+    height: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#content {
+    margin-left: 10rem;
+    width: 200px;
+    height: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.checkbox{
+
+}
+
+.button{
+
+}
+
+.div {
+
+}
