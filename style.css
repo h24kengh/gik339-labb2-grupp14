@@ -1,6 +1,20 @@
+body {
+    display: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+/*     background: linear-gradient(to bottom, #1e2a38, #2f3e4e); */
+   /*  color: #fff; */
+    text-align: center;
 
+}
+h1{
+    margin-left: 20rem;
+    margin-top: 30rem;
+    background-color: #ccc;
+}
 #color {
-    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-left: 20rem;
     width: 200px;
     height: 10px;
     font-size: 20px;
@@ -8,10 +22,12 @@
     border: 2px solid #ccc;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ccc;
 }
 
 #content {
-    margin-left: 10rem;
+    margin-top: 12rem;
+    margin-left: 1rem;
     width: 200px;
     height: 10px;
     font-size: 20px;
