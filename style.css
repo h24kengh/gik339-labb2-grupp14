@@ -1,22 +1,51 @@
 body {
-    display: center;
+
     margin: 0;
     font-family: Arial, sans-serif;
-/*     background: linear-gradient(to bottom, #1e2a38, #2f3e4e); */
-   /*  color: #fff; */
+    background:whitesmoke; /* Mörk gradient */
+    color: #fff;
     text-align: center;
 
+
 }
+
 h1{
-    margin-left: 20rem;
-    margin-top: 30rem;
-    background-color: #ccc;
+    display: center;
+    margin-top: 15rem;
+    font-size: 60px;
+    color: #ccc;
 }
+
+body > input, body > button, body > div {
+    display: block;
+    margin: 10px auto;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    width: 800px;
+    height: 900px;
+    background-color: #1e2a38;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: -1; /* Bakom elementen */
+}
+
+
 #color {
     margin-top: 10rem;
-    margin-left: 20rem;
-    width: 200px;
-    height: 10px;
+    width: 15rem;
+    height: 2rem;
     font-size: 20px;
     padding: 10px;
     border: 2px solid #ccc;
@@ -26,24 +55,32 @@ h1{
 }
 
 #content {
-    margin-top: 12rem;
-    margin-left: 1rem;
-    width: 200px;
-    height: 10px;
+    margin-top: 5rem;
+    
+    width: 15rem;
+    height: 2rem;
     font-size: 20px;
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ccc;
 }
-.checkbox{
 
+.checkbox{  
+margin-top: 5rem;  
+width: 2rem;
+height: 2rem;   
 }
 
 .button{
-
+margin-top: 5rem;
+width: 12rem;
+height: 4rem;
+font-size: 30px;
 }
 
 .div {
 
 }
+
