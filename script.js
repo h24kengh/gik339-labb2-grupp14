@@ -6,17 +6,23 @@ const checkbox = document.getElementById("checkbox")
 den i variabeln textfield */
 const textfield = document.getElementsByClassName("textfield")
 
-/* Hämtar knappen med querySelector och lagrar den i
+/* Hämtar knappen med querySelectorAll och lagrar den i
 variabeln button */
-const button = document.querySelector('button')
+const button = document.querySelectorAll('button')
 
-/* Hämtar div-elementet med querySelectorAll och lagrar
+/* Hämtar div-elementet med querySelector och lagrar
 den i variabeln div */
-const div = document.querySelectorAll('div')
+const div = document.querySelector('div')
 
+/* Kopplar funktionen till input-fältet med name="content" */
+document.querySelector('input[name="content"]').addEventListener('input', handleInput);
 
-function eventListener() {
-console.log(target)
-if  (id=="content")
-
+/* Skapar funktionsdeklarationen handleInput  */
+function handleInput(e) {
+console.log('Eventet genererades av inputfältet: ', e.target);
+const fieldName = e.target.name;
+if (fieldName === "content") {
+    const inputValue = e.target.value;
+div.innerHTML = inputValue;
+}
 }
