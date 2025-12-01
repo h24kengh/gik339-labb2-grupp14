@@ -4,7 +4,7 @@ const checkbox = document.getElementById("checkbox")
 
 /* Hämtar alla textfält med getElementsByClassName och lagrar
 den i variabeln textfield */
-const textfield = document.getElementsByClassName("textfield")
+const textfield = document.getElementsByClassName("textfield");
 
 /* Hämtar knappen med querySelectorAll och lagrar den i
 variabeln button */
@@ -27,12 +27,16 @@ div.innerHTML = inputValue;
 }
 }
 
-document.getElementsByClassName('textfield').addEventListener('input', handleInput);
+function handleClick(e) {
+    console.log('Knappen klickades!', e.target);
+}
 
-document.getElementById('checkbox').addEventListener('change', () => {
+document.getElementsByClassName('textfield')[0].addEventListener('input', handleInput);
+
+document.getElementById('divStyle').addEventListener('change', () => {
     const colorInput = document.getElementById('color');
     const chosenColor = colorInput.value;
     div.style.backgroundColor = chosenColor;
 });
 
-document.querySelectorAll('button').addEventListener('click', handleClick);
+document.querySelectorAll('button')[0].addEventListener('click', handleClick);
