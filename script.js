@@ -27,14 +27,17 @@ div.innerHTML = inputValue;
 }
 }
 
+/* Kopplar eventlyssnare till textfältet */
 document.getElementsByClassName('textfield')[0].addEventListener('input', handleInput);
 
+/* Kopplar eventlyssnare till checkboxen och kopplar den anonyma funktionen */
 document.getElementById('divStyle').addEventListener('change', () => {
     const colorInput = document.getElementById('color');
     const chosenColor = colorInput.value;
     div.style.backgroundColor = chosenColor;
 });
 
+/* Kopplar eventlyssnare till knappen och kopplar den anonyma funktionen */
 document.querySelectorAll('button')[0].addEventListener('click', () => {
     document.querySelector('div').remove();
 });
