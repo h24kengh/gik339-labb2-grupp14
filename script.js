@@ -27,10 +27,6 @@ div.innerHTML = inputValue;
 }
 }
 
-function handleClick(e) {
-    console.log('Knappen klickades!', e.target);
-}
-
 document.getElementsByClassName('textfield')[0].addEventListener('input', handleInput);
 
 document.getElementById('divStyle').addEventListener('change', () => {
@@ -39,4 +35,6 @@ document.getElementById('divStyle').addEventListener('change', () => {
     div.style.backgroundColor = chosenColor;
 });
 
-document.querySelectorAll('button')[0].addEventListener('click', handleClick);
+document.querySelectorAll('button')[0].addEventListener('click', () => {
+    document.querySelector('div').remove();
+});
