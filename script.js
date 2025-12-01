@@ -26,3 +26,13 @@ if (fieldName === "content") {
 div.innerHTML = inputValue;
 }
 }
+
+document.getElementsByClassName('textfield').addEventListener('input', handleInput);
+
+document.getElementById('checkbox').addEventListener('change', () => {
+    const colorInput = document.getElementById('color');
+    const chosenColor = colorInput.value;
+    div.style.backgroundColor = chosenColor;
+});
+
+document.querySelectorAll('button').addEventListener('click', handleClick);
