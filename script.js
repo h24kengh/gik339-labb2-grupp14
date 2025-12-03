@@ -1,20 +1,20 @@
 /* Hämtar checkboxen med getElementById och lagrar den
-i variabeln checkbox */
+i variabeln checkbox. */
 const checkbox = document.getElementById("checkbox");
 
 /* Hämtar alla textfält med getElementsByClassName och lagrar
-den i variabeln textfield */
+den i variabeln textfield. */
 const textfield = document.getElementsByClassName("textfield");
 
 /* Hämtar knappen med querySelectorAll och lagrar den i
-variabeln button */
+variabeln button. */
 const button = document.querySelectorAll('button');
 
 /* Hämtar div-elementet med querySelector och lagrar
-den i variabeln div */
+den i variabeln div. */
 const div = document.querySelector('div');
 
-/* Skapar funktionsdeklarationen handleInput  */
+/* Skapar funktionsdeklarationen handleInput.  */
 function handleInput(e) {
 console.log('Eventet genererades av inputfältet: ', e.target);
 const fieldName = e.target.name;
@@ -24,20 +24,20 @@ div.innerHTML = inputValue;
 }
 }
 
-/* Kopplar eventlyssnare till textfälten */
+/* Kopplar eventlyssnare till textfälten. */
 const textFields = document.getElementsByClassName('textfield');
 for(let field of textFields) {
     field.addEventListener('input', handleInput);
 }
 
-/* Kopplar eventlyssnare till checkboxen och kopplar den anonyma funktionen */
+/* Kopplar eventlyssnare till checkboxen och kopplar den anonyma funktionen. */
 document.getElementById('divStyle').addEventListener('change', () => {
     const colorInput = document.getElementById('color');
     const chosenColor = colorInput.value;
     div.style.backgroundColor = chosenColor;
 });
 
-/* Kopplar eventlyssnare till knappen och kopplar den anonyma funktionen */
+/* Kopplar eventlyssnare till knappen och kopplar den anonyma funktionen. */
 document.querySelectorAll('button')[0].addEventListener('click', () => {
     document.querySelector('div').remove();
 });
