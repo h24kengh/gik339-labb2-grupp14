@@ -22,13 +22,13 @@ if (fieldName === "content") {
     const inputValue = e.target.value;
 div.innerHTML = inputValue;
 }
-}
+};
 
 /* Kopplar eventlyssnare till textfälten. */
 const textFields = document.getElementsByClassName('textfield');
 for(let field of textFields) {
     field.addEventListener('input', handleInput);
-}
+};
 
 /* Kopplar eventlyssnare till checkboxen och kopplar den anonyma funktionen. */
 document.getElementById('divStyle').addEventListener('change', () => {
