@@ -1,6 +1,6 @@
 /* Hämtar checkboxen med getElementById och lagrar den
 i variabeln checkbox */
-const checkbox = document.getElementById("checkbox")
+const checkbox = document.getElementById("checkbox");
 
 /* Hämtar alla textfält med getElementsByClassName och lagrar
 den i variabeln textfield */
@@ -8,14 +8,11 @@ const textfield = document.getElementsByClassName("textfield");
 
 /* Hämtar knappen med querySelectorAll och lagrar den i
 variabeln button */
-const button = document.querySelectorAll('button')
+const button = document.querySelectorAll('button');
 
 /* Hämtar div-elementet med querySelector och lagrar
 den i variabeln div */
-const div = document.querySelector('div')
-
-/* Kopplar funktionen till input-fältet med name="content" */
-document.querySelector('input[name="content"]').addEventListener('input', handleInput);
+const div = document.querySelector('div');
 
 /* Skapar funktionsdeklarationen handleInput  */
 function handleInput(e) {
@@ -27,8 +24,11 @@ div.innerHTML = inputValue;
 }
 }
 
-/* Kopplar eventlyssnare till textfältet */
-document.getElementsByClassName('textfield')[0].addEventListener('input', handleInput);
+/* Kopplar eventlyssnare till textfälten */
+const textFields = document.getElementsByClassName('textfield');
+for(let field of textFields) {
+    field.addEventListener('input', handleInput);
+}
 
 /* Kopplar eventlyssnare till checkboxen och kopplar den anonyma funktionen */
 document.getElementById('divStyle').addEventListener('change', () => {
